@@ -32,4 +32,12 @@ public class PlayerController : MonoBehaviour {
 		rb.AddForce(forceVector);
 		
 	}
+
+	void OnTriggerEnter(Collider other) {
+
+		if (other.gameObject.tag == "Collectible") 
+		{
+			Debug.Log("OnTriggerEnter was called!");
+		}
+	}
 }
