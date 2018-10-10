@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour {
 
 		if (other.gameObject.tag == "Collectible") 
 		{
-			Debug.Log("OnTriggerEnter was called!");
+			Destroy(other.gameObject);
 		}
 	}
 }
