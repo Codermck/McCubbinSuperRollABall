@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour {
 
 		if (other.gameObject.tag == "Collectible") 
 		{
-			Destroy(other.gameObject);
+			isCollected = true;
 		}
 	}
 }
